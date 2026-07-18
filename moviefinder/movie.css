@@ -1,0 +1,80 @@
+html { color-scheme: dark;}
+body {
+font-family: Arial, sans-serif;
+  background-color: #141414; /* Netflix jaisa dark background */
+  color: white;
+  margin: 0;
+  padding: 40px 20px
+}
+
+.main{
+   display: flex;
+   flex-direction: column;
+   align-items:  center;
+   gap: 30px;             /* Heading, Search, aur Cards ke beech ka gap */
+   max-width: 1200px;
+   margin: 0 auto;
+
+
+  
+
+ 
+}
+
+.heading h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #e50914; /* Filmy Red Color */
+}
+
+.search {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  max-width: 500px; /* Search bar ko zyada bada nahi hone dega */
+}
+
+.search input {
+  flex: 1; /* Input box bacha hua saara space le lega */
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background-color: #222;
+  color: white;
+  font-size: 16px;
+}
+
+.search button {
+  padding: 12px 20px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cards {
+  display: grid;
+  /* Yeh line automatic screensize ke hisab se 3 ya 4 columns bana degi */
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.movie-card {
+  background-color: #222;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover; /* Image ko kachra hone se bachayega */
+  border-radius: 6px;
+}
+
