@@ -1,0 +1,67 @@
+html { color-scheme: dark;}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #222;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 100px;
+}
+
+.outer{
+  text-align: center;
+  
+  
+}
+
+.board{
+  /* display:flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  height:70%;  */
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates exactly 3 columns */
+  gap: 5px; /* Space between boxes */
+  margin: 20px auto;
+  width: 300px;
+}
+
+.box{
+  
+  width:100px;
+  height:100px;
+  border:1px;
+  padding:1px;
+  margin:1px;
+  background-color: yellowgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
+
+.winning-box {
+  background-color: gold !important; /* Ya koi bhi mast fluorescent color */
+  transform: scale(1.05); /* Thoda bada dikhne ke liye */
+  transition: all 0.3s ease;
+}
